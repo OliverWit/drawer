@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 .chest__panel--front-frame {
-  border: 10px solid #5b5b5b;
+  border: 8px solid #5b5b5b;
   border-bottom-width: 30px;
   border-top-width: 10px;
   transform: translate3d(0, 0, 0);
