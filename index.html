@@ -6,14 +6,31 @@
 	<title>致婷小姐--想对你说的话都在抽屉里</title>
 	<meta name="language" content="zh-CN">
 	<link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/theme.css" />
 	<link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
 
 </head>
 
 <body>
-  <audio autoplay loop>
+  <div class="div_music_tips"></div>
+  <div class="div_btn" id="div_music" onclick="music_switch()">
+    <!-- 音乐按钮部分 -->
+    <img id="img_music" src="images/music_note_big.png"
+      style="-webkit-animation: music_play_rotate 1s linear infinite;" />
+    <!-- 您的浏览器不支持播放音乐 -->
+    <audio id="audio_music" autoplay="autoplay" loop="loop">
+      <source type="audio/mpeg" />
+    </audio>
+  </div>
+  <div class="div_record_tips"></div>
+  <div class="div_btn" id="div_record" onclick="record_switch()">
+    <audio id="audio_record" loop="loop">
+      <source type="audio/mpeg" />
+    </audio>
+  </div>
+  <!-- <audio autoplay loop>
     <source src="audio/[No Copyright Music] Unconditionally - Broken Elegance.mp3" type="audio/mpeg">
-  </audio>
+  </audio> -->
 	<div class="chest"> 
 		<div class="chest__panel chest__panel--back"></div>
 		<div class="chest__panel chest__panel--front">
@@ -58,5 +75,7 @@
 		</div>
 	</div>
 </body>
-
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/jweixin-1.2.0.js"></script>
+<script src="js/theme_common.js"></script>
 </html>
